@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8081" method="post">
+        <input type="text" name="ss">
+        <input type="submit" value="添加">
+    </form>
+    <p>80808080</p>
+    <script src="../jquery-3.3.1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        var reg=document.getElementById('lo');
+        reg.onclick=function () {
+            $.ajax(
+                {
+                    url:'/login',
+                    type:'get',
+                    data:{},
+                    success:function () {
+
+                    },
+                    error:function () {
+
+                    }
+                }
+            );
+        }
+    </script>
+</body>
+</html>
