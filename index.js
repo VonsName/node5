@@ -1,6 +1,6 @@
 const express=require('express');
 var app=express();
-
+const exstatic=require('express-static');
 /*app.get('/', function (req, res) {
     res.send('Hello World');
 });*/
