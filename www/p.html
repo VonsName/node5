@@ -15,19 +15,18 @@
 
         var reg=document.getElementById('lo');
         reg.onclick=function () {
-            $.ajax(
-                {
+            $.ajax({
+
                     url:'/login',
                     type:'get',
                     data:{},
                     success:function () {
-
+                        alert('成功');
                     },
                     error:function () {
-
+                        alert('错误');
                     }
-                }
-            );
+                });
         }
     </script>
 </body>

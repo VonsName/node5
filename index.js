@@ -1,5 +1,6 @@
 const express=require('express');
 var app=express();
+//解析静态文件
 const exstatic=require('express-static');
 /*app.get('/', function (req, res) {
     res.send('Hello World');
@@ -9,10 +10,9 @@ const exstatic=require('express-static');
     res.send({a:12,b:23});
     res.end();
 });*/
-app.route('/user')
-    .get(function (req,res) {
+app.route('/user').get(function (req,res) {
        res.send('get请求')
-    });
+});
 
 app.route('/').post(function (req,res) {
     res.send('post请求');
